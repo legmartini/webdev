@@ -1,0 +1,319 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+        body {
+            background-color: white;
+        }
+        div#produtos {
+            max-width: 1000px;
+            background-color: white;
+            margin-top: 150px;
+            border-top: 1px solid silver;
+            border-width: 3px;
+        }
+         div#produtos02 {
+            max-width: 1000px;
+            background-color: white;
+            margin-top: 35px;
+            margin-bottom: 0px;
+            border-top: 1px solid silver;
+            border-width: 3px;
+        }
+         div#produtos03 {
+            max-width: 1000px;
+            background-color: white;
+            margin-top: 35px;
+            margin-bottom: 50px;
+            border-top: 1px solid silver;
+            border-width: 3px;
+        }
+        figure#produto {
+            margin-top: 35px;
+        }
+        a#nome {
+            font-family: 'Abel', sans-serif;
+            padding-left: 25px;
+            font-size: 22pt;
+        }
+        a#menu {
+            font-family: 'Abel', sans-serif;
+            padding-left: 15px;
+            font-size: 18pt;
+        }
+        a#menu1 {
+            font-family: 'Abel', sans-serif;
+            padding-left: 15px;
+            font-size: 18pt;
+        }
+        h5#rodape {
+            font-family: 'Abel', sans-serif;
+            margin-left: 175px;
+        }
+        p#rodape {
+            font-family: 'Abel', sans-serif;
+            text-align: center;
+        }
+        a#rodape {
+            text-decoration: none;
+            color: black;
+        }
+        a#rodape:hover {
+            text-decoration:underline;
+        }
+        footer {
+            border-top: 1px black solid;
+            background-color: lightgray;
+        }
+        a#link {
+            margin-left: 400px;
+            text-decoration: none;
+            color: black;
+            font-size: 13pt;
+        }
+        a#copy {
+            font-family: 'Abel', sans-serif;
+            font-size: 12pt;
+            text-decoration: none;
+            color:black;
+            margin-top: 0px;
+        }
+        a#produto {
+            font-family: 'Abel', sans-serif;
+            font-size: 12pt;
+            margin-left: 10px;
+            text-decoration: none;
+            color: black;
+            margin-left: 22px
+        }
+        h1#titulo {
+            font-family: 'Abel', sans-serif;
+            text-align: left;
+            padding-top: 30px;
+            padding-left: 0px;
+            text-shadow: 0px 0px 1px black;
+        }
+        img#logo {
+            margin-left: 15px;
+            margin-top: 15px;
+        }
+        img#linkimg {
+            margin: 0px;
+        }
+        img#email {
+            margin-top: -8px;
+            margin-left: -10px;
+        }
+        footer {
+            background-color: snow;
+        }
+        div#carrinho {
+            text-decoration: none;
+            color: black;
+            
+        }
+        a#carrinho {
+            text-decoration: none;
+            color: black;
+            font-family: 'Abel', sans-serif;
+            font-size: 16pt;
+            padding-top: 8px;
+        }
+        a#cadastro {
+            text-decoration: none;
+            color: black;
+            font-family: 'Abel', sans-serif;
+            font-size: 16pt;
+            padding-top: 8px;
+            padding-left: 15px;
+        }
+    </style>
+    <title>Cura</title>
+  </head>
+  <body>
+     <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-white">
+        <a href="index.html"><img src="imagens/logo-sm.jpg" width="125" id="logo"></a>
+        <a class="navbar-brand" href="index.html" id="nome">Cura</a>  
+    </nav>
+    
+    <div class="container-fluid" id="produtos">
+        <h1 id="titulo">Peças</h1>
+        <div class="row">
+            <div class="col-sm-3">
+                <figure class="figure" id="produto">
+                
+                <!-- IMG SRC : IMAGEM DO PRODUTO | TITLE : NOME DO PRODUTO -->
+                <a href="produto.html"><img src="imagens/produtos/frentecabide.jpg" class="figure-img img-fluid rounded" width="250" title="Camisa Xadrex"></a>
+                    
+                <!-- HREF : PÁGINA DO PRODUTO | TEXTO : ALTERA NOME E VALOR -->
+                <a id="produto" href="produto.html"><br>Maiô | R$ 30,00</a>
+                    
+              </figure>
+            </div>
+            <div class="col-sm-3">
+              <figure class="figure" id="produto">
+                  
+                <!-- IMG SRC : IMAGEM DO PRODUTO | TITLE : NOME DO PRODUTO -->
+                <a href="produto2.html"><img src="imagens/produtos/logo.png" class="figure-img img-fluid rounded" width="250" title="Camisa Xadrex"></a>
+                  
+                <!-- HREF : PÁGINA DO PRODUTO | TEXTO : ALTERA NOME E VALOR -->
+                <a id="produto" href="produto.html"><br>Camisa Xadrex | R$ 39,90</a>
+                  
+              </figure>
+            </div>
+            <div class="col-sm-3">
+              <figure class="figure" id="produto">
+                  
+                <!-- IMG SRC : IMAGEM DO PRODUTO | TITLE : NOME DO PRODUTO -->
+                <a href="produto3.html"><img src="imagens/produtos/logo.png" class="figure-img img-fluid rounded" width="250" title="Calça Jeans"></a>
+                  
+                <!-- HREF : PÁGINA DO PRODUTO | TEXTO : ALTERA NOME E VALOR -->
+                <a id="produto" href="produto.html"><br>Calça Jeans | R$ 32,90</a>
+                  
+              </figure>
+            </div>
+            <div class="col-sm-3">
+              <figure class="figure" id="produto">
+                  
+                <!-- IMG SRC : IMAGEM DO PRODUTO | TITLE : NOME DO PRODUTO -->
+                <a href="produto4.html"><img src="imagens/produtos/logo.png" class="figure-img img-fluid rounded" width="250" title="Casaco de Moleton"></a>
+                  
+                <!-- HREF : PÁGINA DO PRODUTO | TEXTO : ALTERA NOME E VALOR -->
+                <a id="produto" href=""><br>Casaco de Moleton | R$ 45,90</a>
+                  
+              </figure>
+            </div>
+        </div>
+    </div>
+    <div class="container" id="produtos02">
+        <div class="row">
+            <div class="col-sm-3">
+              <figure class="figure" id="produto">
+                  
+                <!-- IMG SRC : IMAGEM DO PRODUTO | TITLE : NOME DO PRODUTO -->
+                <a href="produto5.html"><img src="imagens/produtos/logo.png" class="figure-img img-fluid rounded" width="250" title="Boné Branco"></a>
+                  
+                <!-- HREF : PÁGINA DO PRODUTO | TEXTO : ALTERA NOME E VALOR -->
+                <a id="produto" href="#"><br>Boné Branco | R$ 12,90</a> 
+                  
+              </figure>
+            </div>
+            <div class="col-sm-3">
+              <figure class="figure" id="produto">
+                  
+                <!-- IMG SRC : IMAGEM DO PRODUTO | TITLE : NOME DO PRODUTO -->
+                <a href="#"><img src="imagens/produtos/logo.png" class="figure-img img-fluid rounded" width="250" title="NomeDoProduto"></a>
+                  
+                <!-- HREF : PÁGINA DO PRODUTO | TEXTO : ALTERA NOME E VALOR -->  
+                <a id="produto" href="#"><br>Nome do produto | R$ 00,00</a> 
+                  
+              </figure>
+            </div>
+            <div class="col-sm-3">
+              <figure class="figure" id="produto">
+                  
+                <!-- IMG SRC : IMAGEM DO PRODUTO | TITLE : NOME DO PRODUTO -->
+                <a href="#"><img src="imagens/produtos/logo.png" class="figure-img img-fluid rounded" width="250" title="NomeDoProduto"></a>
+                  
+                <!-- HREF : PÁGINA DO PRODUTO | TEXTO : ALTERA NOME E VALOR -->
+                <a id="produto" href="#"><br>Nome do produto | R$ 00,00</a> 
+                  
+              </figure>
+            </div>
+            <div class="col-sm-3">
+              <figure class="figure" id="produto">
+                  
+                <!-- IMG SRC : IMAGEM DO PRODUTO | TITLE : NOME DO PRODUTO -->
+                <a href="#"><img src="imagens/produtos/logo.png" class="figure-img img-fluid rounded" width="250" title="NomeDoProduto"></a>
+                  
+                <!-- HREF : PÁGINA DO PRODUTO | TEXTO : ALTERA NOME E VALOR -->
+                <a id="produto" href="#"><br>Nome do produto | R$ 00,00</a> 
+                  
+              </figure>
+            </div>
+        </div>
+    </div>
+      
+    <div class="container" id="produtos03">
+        <div class="row">
+            <div class="col-sm-3">
+              <figure class="figure" id="produto">
+                  
+                <!-- IMG SRC : IMAGEM DO PRODUTO | TITLE : NOME DO PRODUTO -->
+                <a href="#"><img src="imagens/produtos/logo.png" class="figure-img img-fluid rounded" width="250" title="NomeDoProduto"></a>
+                  
+                <!-- HREF : PÁGINA DO PRODUTO | TEXTO : ALTERA NOME E VALOR -->
+                <a id="produto" href="#"><br>Nome do produto | R$ 00,00</a> 
+                  
+              </figure>
+            </div>
+            <div class="col-sm-3">
+              <figure class="figure" id="produto">
+                  
+                <!-- IMG SRC : IMAGEM DO PRODUTO | TITLE : NOME DO PRODUTO -->
+                <a href="#"><img src="imagens/produtos/logo.png" class="figure-img img-fluid rounded" width="250" title="NomeDoProduto"></a>
+                  
+                <!-- HREF : PÁGINA DO PRODUTO | TEXTO : ALTERA NOME E VALOR -->
+                <a id="produto" href="#"><br>Nome do produto | R$ 00,00</a> 
+                  
+              </figure>
+            </div>
+            <div class="col-sm-3">
+              <figure class="figure" id="produto">
+                  
+                <!-- IMG SRC : IMAGEM DO PRODUTO | TITLE : NOME DO PRODUTO -->
+                <a href="#"><img src="imagens/produtos/logo.png" class="figure-img img-fluid rounded" width="250" title="NomeDoProduto"></a>
+                  
+                <!-- HREF : PÁGINA DO PRODUTO | TEXTO : ALTERA NOME E VALOR -->
+                <a id="produto" href="#"><br>Nome do produto | R$ 00,00</a> 
+                  
+              </figure>
+            </div>
+            <div class="col-sm-3">
+              <figure class="figure" id="produto">
+                  
+                <!-- IMG SRC : IMAGEM DO PRODUTO | TITLE : NOME DO PRODUTO -->
+                <a href="#"><img src="imagens/produtos/logo.png" class="figure-img img-fluid rounded" width="250" title="NomeDoProduto"></a>
+                  
+                <!-- HREF : PÁGINA DO PRODUTO | TEXTO : ALTERA NOME E VALOR -->
+                <a id="produto" href="#"><br>Nome do produto | R$ 00,00</a> 
+                  
+              </figure>
+            </div>
+        </div>
+    </div>
+      
+     <footer class="page-footer font-small blue pt-4">
+
+        <div class="container-fluid text-center text-md-left">
+
+          <div class="row">
+            <hr class="clearfix w-100 d-md-none pb-3">
+            <div class="col-md-6 mb-md-6 mb-6" id="rodape">
+                <h5 class="text-Capitalized"><p id="rodape"><a href="#" id="rodape">Instagram</a> <a href="#"><img src="imagens/instagram.png" width=25></a></p></h5>
+              </div>
+              <div class="col-md-6 mb-md-6 mb-6">
+                  <h5 class="text-Capitalized"><p id="rodape"><a href="#" id="rodape">Whatsapp</a> <a href="#"><img src="imagens/whatsapp.png" width=25></a></p></h5>
+              </div>
+          </div>
+        </div>
+        <div class="footer-copyright text-center py-3">
+          <a href="http://www.instagram.com/legmartini" target="_blank" id="copy">© 2019 Copyright | Luiz E. Martini</a>
+        </div>
+    </footer> 
+      
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
