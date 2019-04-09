@@ -1,0 +1,447 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
+    <script type="text/javascript" src="scripts/jquery.min.js"></script>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+        body {
+            background-color: white;
+        }
+        div#produtos {
+            max-width: 1000px;
+            background-color: white;
+            margin-top: 150px;
+            border-top: 1px solid silver;
+            border-width: 3px;
+        }
+        div#carrossel {
+            margin-top: 35px;
+        }
+        figure#produto {
+            margin-top: 35px;
+        }
+        a#nome {
+            font-family: 'Abel', sans-serif;
+            padding-left: 25px;
+            font-size: 22pt;
+        }
+        a#menu {
+            font-family: 'Abel', sans-serif;
+            padding-left: 50px;
+            padding-top: 10px;
+            font-size: 15pt;
+        }
+        h5#rodape {
+            font-family: 'Abel', sans-serif;
+            margin-left: 175px;
+        }
+        p#rodape {
+            font-family: 'Abel', sans-serif;
+            text-align: center;
+        }
+        a#rodape {
+            text-decoration: none;
+            color: black;
+        }
+        a#rodape:hover {
+            text-decoration:underline;
+        }
+        footer {
+            border-top: 1px black solid;
+            background-color: lightgray;
+            margin-top: 25px;
+        }
+        a#link {
+            margin-left: 400px;
+            text-decoration: none;
+            color: black;
+            font-size: 13pt;
+        }
+        a#copy {
+            font-family: 'Abel', sans-serif;
+            font-size: 12pt;
+            text-decoration: none;
+            color:black;
+            margin-top: 0px;
+        }
+        p#produto {
+            font-family: 'Abel', sans-serif;
+            font-size: 22pt;
+            margin-left: 10px;
+            text-decoration: none;
+            color: black;
+            margin-top: 25px;
+        }
+        p#preco {
+            font-family: 'Abel', sans-serif;
+            font-size: 18pt;
+            margin-left: 10px;
+            text-decoration: none;
+            color: black;
+            margin-top: 0px;
+        }
+        p#desc {
+            font-family: 'Abel', sans-serif;
+            font-size: 15pt;
+            margin-left: 10px;
+            text-decoration: none;
+            color: black;
+            margin-top: 0px;
+        }
+        p#tam {
+            font-family: 'Abel', sans-serif;
+            font-size: 15pt;
+            margin-left: 10px;
+            text-decoration: none;
+            color: black;
+            margin-top: 0px;
+        }
+        p#opc {
+            font-family: 'Abel', sans-serif;
+            font-size: 15pt;
+            margin-left: 10px;
+            text-decoration: none;
+            color: black;
+            margin-top: 0px;
+            border-top: 3px solid silver;
+        }
+        p#opc2 {
+            font-family: 'Abel', sans-serif;
+            font-size: 15pt;
+            margin-left: 10px;
+            text-decoration: none;
+            color: black;
+            margin-top: 0px;
+            border-top: 3px solid silver;
+        }
+        p#descri {
+            font-size: 8pt;
+            margin-left: 10px;
+            margin-top: -20px;
+        }
+        a#whats {
+            font-family: 'Abel', sans-serif;
+            font-size: 15pt;
+            margin-left: 10px;
+            text-decoration: none;
+            color: black;
+        }
+        h1#titulo {
+            font-family: 'Abel', sans-serif;
+            text-align: left;
+            padding-top: 30px;
+            padding-left: 0px;
+            text-shadow: 0px 0px 1px black;
+        }
+        img#logo {
+            margin-left: 15px;
+            margin-top: 15px;
+        }
+        img#linkimg {
+            margin: 0px;
+        }
+        img#email {
+            margin-top: -8px;
+            margin-left: -10px;
+        }
+        img#whatsapp {
+            padding-bottom: 48px;
+        }
+        a#whatsapp {
+            font-family: 'Abel', sans-serif;
+            font-size: 15pt;
+            margin-left: 10px;
+            text-decoration: none;
+            color: black;
+            padding-bottom: 48px;
+        }
+        footer {
+            background-color: snow;
+        }
+        a#btncompra {
+            font-family: 'Abel', sans-serif;
+            margin-left: 10px;
+        } 
+        div#carrinho {
+            text-decoration: none;
+            color: black;
+            
+        }
+        a#carrinho {
+            text-decoration: none;
+            color: black;
+            font-family: 'Abel', sans-serif;
+            font-size: 16pt;
+            padding-top: 8px;
+        }
+        a#cadastro {
+            text-decoration: none;
+            color: black;
+            font-family: 'Abel', sans-serif;
+            font-size: 16pt;
+            padding-top: 8px;
+            padding-left: 15px;
+        }
+        input#btncompra {
+            padding-left: 8px;
+        }
+        input#status {
+            display: block;
+            margin: 10px;
+            font-family: 'Abel', sans-serif;
+            font-size: 14pt;
+            margin-left: 25px;
+        }
+        img#status {
+            margin-top: 10px;
+        }
+        select#sectionChooser {
+            font-family: 'Abel', sans-serif;
+            margin-left: 10px;
+            margin-bottom: 5px;
+        }
+        option#opcpag {
+            color: gray;
+            font-family: 'Abel', sans-serif;
+            margin-left: 10px;
+            margin-bottom: 5px;
+        }
+        option#two {
+            margin-left: 10px;
+            margin-bottom: 5px;
+            font-family: 'Abel', sans-serif;
+        }
+        option#three {
+            margin-left: 10px;
+            margin-bottom: 5px;
+            font-family: 'Abel', sans-serif;
+        }
+        option#four {
+            margin-left: 10px;
+            margin-bottom: 5px;
+            font-family: 'Abel', sans-serif;
+        }
+        .panel {
+            display: none;
+        }
+        #one {
+            display: block;
+        }
+        div#one p#opczero {
+            font-family: 'Abel', sans-serif;
+            font-size: 15pt;
+            margin-left: 10px;
+            text-decoration: none;
+            color: black;
+            margin-top: 0px;
+            border-top: 3px solid silver;
+            margin-bottom: 100px;
+        } 
+        img#maoscura {
+            margin-bottom: -12px;
+            margin-left: 60px;
+        }
+        img#correiocura {
+            margin-left: -25px;
+        }
+    </style>
+    <link rel="icon" href="imagens/logos/logo-sm.jpg" type="image/x-icon" />
+    <title>cura - maio preto/azul</title>
+  </head>
+  <body>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-white">
+        <a href="index.html"><img src="imagens/logos/logo-sm.jpg" width="125" id="logo"></a>
+        <a class="navbar-brand" href="index.html" id="nome">cura</a>
+        <a class="navbar-brand" id="nome" href="index.html"> voltar </a>
+    </nav>
+    
+    <div class="container-fluid" id="produtos">
+        <div class="row">
+            <div id="carouselExampleIndicators" class="carousel slide col-sm-4" data-ride="carousel">
+              <div class="carousel-inner" id="carrossel">
+                <div class="carousel-item active">
+                    
+                  <!-- IMG SRC : PRIMEIRA FOTO DO PRODUTO -->
+                  <img class="d-block w-100" src="imagens/produtos/maioazul/frentecabide.png" alt="First slide">
+                    
+                </div>
+                <div class="carousel-item">
+                    
+                  <!-- IMG SRC : SEGUNDA FOTO DO PRODUTO -->
+                  <img class="d-block w-100" src="imagens/produtos/maioazul/costascabide.png" alt="Second slide">
+                    
+                </div>
+                  <div class="carousel-item">
+                    
+                  <!-- IMG SRC : TERCEIRA FOTO DO PRODUTO -->
+                  <img class="d-block w-100" src="imagens/produtos/maioazul/frente.png" alt="third slide">
+                    
+                </div>
+                  <div class="carousel-item">
+                    
+                  <!-- IMG SRC : QUARTA FOTO DO PRODUTO -->
+                  <img class="d-block w-100" src="imagens/produtos/maioazul/costas.png" alt="Fourth slide">
+                    
+                </div>
+              </div>
+              <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">anterior</span>
+              </a>
+              <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">próximo</span>
+              </a>
+          </div>
+          
+            <div class="col-sm-8">
+                
+                <!-- NOME, PREÇO, TAMANHO E DESCRIÇÃO -->
+                <p id="produto">maiô</p>
+                <p id="preco">R$ 30</p>
+                <p id="tam">tamanho P</p>
+                <p id="desc">usado || comprimento 49 cm || largura 31 cm </p>
+                
+                
+                <div class="row">
+                    
+                <!-- STATUS DO PRODUTO VALUE = DISPONÍVEL OU VENDIDO -->
+                <input type="text" name="status" value=" disponível" readonly id="status" size="9">
+                
+                <!-- IMG SRC = disponivel.png OU vendido.png -->    
+                <img src="imagens/botoes/disponivel.png" height="30" id="status">
+                    
+                    
+                </div>
+                
+                <select id="sectionChooser">
+                    <option value="one" selected id="opcpag">-- selecione o método de pagamento --</option>
+                    <option value="two" id="two">1 - sedex ou PAC</option>
+                    <option value="three" id="three">2 - pagar online e retirar comigo</option>
+                    <option value="four" id="four">3 - pagar e retirar diretamente comigo</option>
+                </select>
+
+                <div class="panel" id="one">
+                    <p id="opczero"> selecione o método de pagamento </p>
+                    
+                  
+                    
+                </div>
+                
+                <div class="panel" id="two">
+                    <!-- Declaração do formulário PAGSEGURO SEDEX/PAC -->
+                
+                <form target="pagseguro" method="post" action="https://pagseguro.uol.com.br/checkout/checkout.jhtml">
+                  <input type="hidden" name="email_cobranca" value="mercadejocura@gmail.com" />
+                  <input type="hidden" name="tipo" value="CBR" />
+                  <input type="hidden" name="moeda" value="BRL" />
+                    
+                  <!-- CODIGO DO PRODUTO -->
+                  <input type="hidden" name="item_id" value="maioazul" />
+                    
+                  <!-- NOME DO ITEM E TAMANHO -->
+                  <input type="hidden" name="item_descr" value="meiô | tam: P" />
+                  
+                  <input type="hidden" name="item_quant" value="1" />
+                    
+                  <!-- VALOR DA PEÇA-->
+                  <input type="hidden" name="item_valor" value="3000" />
+                    
+                  <input type="hidden" name="frete" value="0" />
+                  <input type="hidden" name="peso" value="1" />
+                  <input type="hidden" name="item_frete_x=1" value="1" />
+                  <p id="opc"> sedex | PAC</p>    
+                  <p id="descri">clique abaixo para pagar online e receber sua encomenda através de sedex ou pac</p>
+                  
+                  <input type="image" src="imagens/botoes/184x42-carrinho-cinza-assina.gif" name="submit" alt="Visualizar carrinho de compras" id="btncompra"/><br>
+                  <img src="imagens/botoes/correiocura.png" width="250" id="correiocura">
+                    
+                </form> 
+                </div>
+                <div class="panel" id="three">
+                    <!-- Declaração do formulário PAGSEGURO Retirar em Mãos -->
+                <form target="pagseguro" method="post" action="https://pagseguro.uol.com.br/checkout/checkout.jhtml">
+                  <input type="hidden" name="email_cobranca" value="mercadejocura@gmail.com">
+                  <input type="hidden" name="tipo" value="CP">
+                  <input type="hidden" name="moeda" value="BRL">
+                    
+                  <!-- CODIGO DO PRODUTO -->
+                  <input type="hidden" name="item_id_1" value="maioazul">
+                    
+                  <!-- NOME DO ITEM E TAMANHO -->
+                  <input type="hidden" name="item_descr_1" value="maiô | tam: P">
+                    
+                  <input type="hidden" name="item_quant_1" value="1">
+                    
+                  <!-- VALOR DA PEÇA-->
+                  <input type="hidden" name="item_valor_1" value="3000">
+                    
+                  <input type="hidden" name="item_frete_1" value="1">
+                  <input type="hidden" name="item_peso_1" value="0">
+                  <input type="hidden" name="tipo_frete" value="EN">
+                   
+                  <p id="opc2"> pagar online e retirar comigo</p>
+                  <p id="descri">clique abaixo para pagar online, no cartão ou boleto e retirar diretamente comigo</p>
+                
+                  <input type="image" src="imagens/botoes/184x42-carrinho-cinza-assina.gif" name="submit" alt="Pague com PagSeguro - é rápido, grátis e seguro!" id="btncompra"><br>
+                  <img src="imagens/botoes/maoscura.png" width="75" id="maoscura">
+                        
+                </form>
+                </div>
+                <div class="panel" id="four">
+                    <p id="opc2"> pagar e retirar comigo</p>
+                    <p id="descri">clique abaixo para combinar o pagamento e retirar diretamente comigo</p>
+
+
+                    <a href="index.html" id="whatsapp">whats</a> <a href="#"><img src="imagens/botoes/whatsapp.png" width=25 id="whatsapp"></a>
+                </div>
+
+
+                
+            
+            </div>
+        </div>
+    </div>
+      
+      
+      
+    <footer class="page-footer font-small blue pt-4">
+
+        <div class="container-fluid text-center text-md-left">
+
+          <div class="row">
+            <hr class="clearfix w-100 d-md-none pb-3">
+            <div class="col-md-6 mb-md-6 mb-6" id="rodape">
+                <h5 class="text-Capitalized"><p id="rodape"><a href="https://www.instagram.com/mercadejo.cura" id="rodape" target="_blank">insta</a> <a href="https://www.instagram.com/mercadejo.cura" target="_blank"><img src="imagens/botoes/instagram.png" width=25></a></p></h5>
+              </div>
+              <div class="col-md-6 mb-md-6 mb-6">
+                  <h5 class="text-Capitalized"><p id="rodape"><a href="#" id="rodape">whats</a> <a href="#"><img src="imagens/botoes/whatsapp.png" width=25></a></p></h5>
+              </div>
+          </div>
+        </div>
+        <div class="footer-copyright text-center py-3">
+          <a href="http://www.instagram.com/legmartini" target="_blank" id="copy">© 2019 Copyright | Luiz E. Martini</a>
+        </div>
+    </footer> 
+      
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $('#sectionChooser').change(function(){
+            var myID = $(this).val();
+            $('.panel').each(function(){
+                myID === $(this).attr('id') ? $(this).show() : $(this).hide();
+            });
+        });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
